@@ -19,17 +19,3 @@ be used for comparing and discovering the similarity among products. This will b
 
 ![image](https://github.com/Volanda-Zhu/Hidden-Fashion/blob/master/img/baseline%20architecture.jpg)
 (baseline architecture)
-
-We use loss function to compare among 4 different models, with each model trained for 60 epochs.
-It turns out that Mobilenet has the worst loss due to its relative simple structure. VGG 16 and VGG 19 perform
-better, but still have a loss near 1. Mask R-CNN and Mag R-CNN, on the other hand, perform well on these
-tasks. Further, Mag R-CNN demonstrate extraordinary ability in mask task.
-![image](https://github.com/Volanda-Zhu/Hidden-Fashion/blob/master/img/loss%20comparison.jpg)
-
-Category classification The average precision score is 0.45 , recall is 0.44, precision is .Result shows that
-clothes like jumpsuit, dress have lower accuracy while T-shirt have a relatively high score.
-![image](https://github.com/Volanda-Zhu/Hidden-Fashion/blob/master/img/classification%20metric.jpg)
-
-Clothes retrieval Top-k retrieval accuracy is adopted to measure the performance of retrieval task, It turns out
-that the Mag-R-CNN improved the model accuracy by 3.66%.
-![image](https://github.com/Volanda-Zhu/Hidden-Fashion/blob/master/img/topk%20retrieval.jpg)
